@@ -1,4 +1,6 @@
 # Real-time-Visualization-On-Hadoop-using-D3
+In this project, I have build two simple and interactive wordcloud visualization from both Hbase and Hive tables.
+You can always customize the visualization as per your requirements without effecting the architecture.
 
 # Pre Requisites
 1. install all the python packages listed in the requirements.txt fil
