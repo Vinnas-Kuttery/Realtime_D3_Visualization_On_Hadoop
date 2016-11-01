@@ -3,11 +3,12 @@ In this project, I have build two simple and interactive wordcloud visualization
 You can always customize the visualization as per your requirements without effecting the architecture.
 
 # Pre Requisites
-1. install all the python packages listed in the requirements.txt fil
+1. extract and kepp the given static.rar file in the same working directory (in order to avoid the upload complexity, I have just compressed and uploaded.)
+2. install all the python packages listed in the requirements.txt fil
  or
  install it by running the command 'pip install -r /requirements.txt'
-2. Make sure the table '' is created in both of Hive and HBase(Phoenix) databases using the source data.
-3. extract and kepp the give static.rar file in the same working directory (in order to avoid the upload complexity, I just compressed it. it has to be available as a foler in your project.)
+3. Make sure the table '' is created in both of Hive and HBase(Phoenix) databases using the source data.
+
 
 # How to run the application?
 1. clone or download the project.
