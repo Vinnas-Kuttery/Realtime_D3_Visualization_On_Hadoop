@@ -7,7 +7,7 @@ You can always customize the visualization as per your requirements without effe
 2. install all the python packages listed in the requirements.txt fil
  or
  install it by running the command 'pip install -r /requirements.txt'
-3. Make sure the table '' is created in both of Hive and HBase(Phoenix) databases using the source data.
+3. Make sure the table 'imdb_data ' is created in both of Hive and HBase(Phoenix) databases using the source data.
 
 
 # How to run the application?
