@@ -13,8 +13,8 @@ Follow the below activities before you run the application,
 2. extract the static.rar file
 3. run app.py file : python app.py
 4. access your visualization using the below links
-*Hbase Visualization - htttp://[your server IP]:5000/HBaseViz
-*Hive Visualization  - htttp://[your server IP]:5000/HiveViz
+  a) Hbase Visualization - htttp://[your server IP]:5000/HBaseViz
+  b) Hive Visualization  - htttp://[your server IP]:5000/HiveViz
 
 # Recomendation
 1. Using Hbase(Phoenix) as data source will give you the best performance.
