@@ -25,4 +25,4 @@ once the application is running, you can access the visualizations by replacing 
 2. User concurrency for flask can be acheive using gunicorn integration
 3. for large scale application, just upgrade flask with Djang, remaining componenets are good enough as per the architecture.
 
-*Note: refer the document.doc for more details
+*Note: refer the documentation.doc for more details
