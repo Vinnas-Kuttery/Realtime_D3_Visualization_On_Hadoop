@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Stock Visualizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href={{ url_for('static', filename='./bower_components/bootstrap/dist/css/bootstrap.min.css') }} rel="stylesheet" media="screen">
+    <link href={{ url_for('static', filename='main.css') }} rel="stylesheet" media="screen">
+  </head>
+  <style type="text/css">
+
+	.title 
+	{
+		font-family: Verdana;
+		font-size: 15px;	
+	}
+
+	.xAxis 
+	{
+		font-family: verdana;
+		font-size: 11px;
+		fill: black;
+	}  
+
+	.yAxis 
+	{
+		font-family: verdana;
+		font-size: 11px;
+		fill: white;
+	}
+
+	  
+	#select-container1
+	{    
+                position:absolute;
+                top:10.8%;
+                left:3%;
+	}
+        #select-container2
+        {
+                position:absolute;
+                top:10.8%;
+                left:21.2%;
+        }
+        #select-container3
+        {
+                position:absolute;
+                top:10.8%;
+                left:40.4%;
+        }
+        #select-container4
+        {
+                position:absolute;
+                top:10.8%;
+                left:59%;
+        }
+
+	.select-list
+	{
+
+		position: absolute;
+		border-radius: 4px;
+		color: #fff;
+		background-color: #337ab7;
+		border-color: #2e6da4;
+		border-style: outset;
+		border-width: 2px;
+
+	}
+        #submit-button
+        {
+		position: absolute;
+		top: 11.2%;
+		left: 85.2%;
+		width: 12.2%;
+		height: 5%;
+		border-radius: 5px;
+		visibility: visible;
+		color: #fff;
+		background-color: #337ab7;
+		border-color: #2e6da4;
+		margin-bottom: 0;
+		font-size: 14px;
+		font-weight: 400;
+
+        }
+
+	#wordcloud
+	{
+		position:fixed;
+		top:17.2%;
+		left:2%;
+                width:96%;
+		height:80%;
+		background-color:#0c3d67;
+                //border-size:1px;
+                //border-style:ridge;
+                //border-color:#DCDCDC;
+                //border-style: groove;
+                //border-bottom-width: 4px;
+                //border-right-width: 4px;
+                //border-top-width: 0px;
+                //border-left-width: 4px;
+	}
+	#showData
+	{
+                position:absolute;
+		height:13%;
+		width:50%;
+		text-align:left;
+                border-size:1px;
+                border-style:ridge;
+                border-color:#DCDCDC;
+		left:2%; 
+		top:10.2%;
+                overflow-y: scroll;
+                border-style: groove;
+                border-bottom-width: 4px;
+                border-right-width: 0px;
+                border-top-width: 4px;
+                border-left-width: 4px;
+                border-radius: 5px;
+	}
+	#header-container 
+	{
+		border-radius: 5px;
+		height: 7%;
+		width: 96%;
+		text-align: left;
+		background-color: #0c3d67;
+		position: absolute;
+		padding: 8px;
+		left: 2%;
+		font: 26px sans-serif;
+		font-weight: bold;
+		color: white;
+	}
+	#filter-container
+	{
+		height:7%;
+		width:96%;
+		text-align: left;
+		background-color:#B0C4DE;  
+		position:absolute; 
+		left:2%; 
+		top:10.2%;
+		//border-radius: 5px;
+                //border-style: groove;
+                //border-bottom-width: 4px;
+                //border-right-width: 4px;
+                //border-top-width: 4px;
+                //border-left-width: 0px;
+	}
+        #loadingimage
+        {
+		position: absolute;
+                height:30%;
+                width:25%;
+		left: 35%;
+		top: 30%;
+        }
+
+  </style>
+  <body>
+        <div id="header-container">
+		<div id="header-content" style="font-size:25px; position:absolute; top:7px; left:5px"> D3 Viz on HBase Data</div>
+	</div>
+        <div class = "containerID">
+                <div id="filter-container"></div>
+               	<div id="select-container1">Color</div>
+               	<div id="select-container2">Year</div>
+               	<div id="select-container3">Language</div>
+               	<div id="select-container4">Country</div>
+                <input id="submit-button" type="button" value="Submit"  visibility=hidden onclick="updateFromDropdown()">.</input>
+                <div id="wordcloud">
+                <img id="loadingimage" name="loadingimage" src="https://www.sktthemes.net/wp-content/uploads/2016/09/loading.gif" alt="Mountain View">
+                </div>
+        </div>
+        <script src={{ url_for('static', filename='./bower_components/jquery/dist/jquery.min.js') }}></script>
+        <script src={{ url_for('static', filename='./bower_components/bootstrap/dist/js/bootstrap.min.js') }}></script>
+        <script src={{ url_for('static', filename='./bower_components/d3/d3.min.js') }}></script>
+        <script src={{ url_for('static', filename='./bower_components/d3-cloud-master/build/d3.layout.cloud.js') }}></script>
+        <script src={{ url_for('static', filename='HBase_js.js') }}></script>
+  </body>
+</html>
+
