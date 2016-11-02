@@ -3,7 +3,7 @@ In this project, I have build two simple and interactive wordcloud visualization
 You can always customize the visualization as per your requirements without effecting the architecture.
 
 # Pre Requisites
-1. extract and kepp the given static.rar file in the same working directory (in order to avoid the upload complexity, I have just compressed and uploaded.)
+1. extract and keep the given static.rar file in the same working directory (in order to avoid the upload complexity, I have just compressed and uploaded.)
 2. install all the python packages listed in the requirements.txt fil
  or
  install it by running the command 'pip install -r /requirements.txt'
