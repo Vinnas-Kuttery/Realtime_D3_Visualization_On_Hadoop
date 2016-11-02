@@ -2,18 +2,23 @@
 In this project, I have build two simple and interactive wordcloud visualization from both Hbase and Hive tables.
 You can always customize the visualization as per your requirements without effecting the architecture.
 
+# platform Requirements
+1. Operating System   : Linux CentOS 6
+2. Hadoop Version     : HDP2 or Above
+3. Hadoop Components  : Hive, Phoenix, Hbase
+4. Software/Languages : Python
+
 # Pre Requisites
-1. extract and keep the given static.rar file in the same working directory (in order to avoid the upload complexity, I have just compressed and uploaded.)
-2. install all the python packages listed in the requirements.txt fil
+1. install all the python packages listed in the requirements.txt fil
  or
  install it by running the command 'pip install -r /requirements.txt'
-3. Make sure the table 'imdb_data ' is created in both of Hive and HBase(Phoenix) databases using the source data.
+2. Make sure the table 'imdb_data ' is created in both of Hive and HBase(Phoenix) databases using the source data.
 
 
 # How to run the application?
 1. clone or download the project.
-2. extract the static.rar file
-3. run app.py file : python app.py
+2. Extract and keep the given static.rar file in the same working directory (in order to avoid the upload complexity, I have just compressed and uploaded.)
+3. run app.py file : 'python app.py'
 
 # How to access the viz?
 once the application is running, you can access the visualizations by replacing server ip in the below links.
