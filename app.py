@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify
-from loadHiveData import *#import get_data,tempdata,sentimentDataLoad,uniqueKeywords()
+from dataQuery.loadHiveData import *#import get_data,tempdata,sentimentDataLoad,uniqueKeywords()
 import os
-from loadHBaseData import *
+from dataQuery.loadHBaseData import *
 
 app = Flask(__name__)
 
