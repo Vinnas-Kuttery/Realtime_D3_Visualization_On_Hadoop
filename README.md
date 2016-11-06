@@ -18,7 +18,7 @@ You can always customize the visualization as per your requirements without effe
 2. Extract the visualization <br/>Command : unzip Visualization.zip<br/>
 3. Goto 'Visualization' Directory <br/>Command : cd Visualization<br/>
 
-4. Extract and keep the given static.rar file in the same working directory (in order to avoid the upload complexity, I have just compressed and uploaded.) <br/>Command : unzip static.rar <br/>
+4. Extract and keep the given static.zip file in the same working directory (in order to avoid the upload complexity, I have just compressed and uploaded.) <br/>Command : unzip static.rar <br/>
 3. run app.py file <br/> Command : python app.py
 
 # How to access the viz? <br/> 
